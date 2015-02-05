@@ -22,7 +22,7 @@ def home():
   
 @app.route("/profile/")
 def profile():
-  return render_template("profile.html")
+  return render_template("profile.html", myvar=timeinfo())
 
 @app.route("/timeinfo/")
 def timeinfo():
